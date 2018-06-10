@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
+import A from '../../components/A'
 import './index.scss'
 
 export default class Index extends Component {
@@ -17,14 +18,15 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  async handleX () {
-    await console.log('sdsd')
+  handleX = () => {
+    console.log('sdsd')
   }
 
   render () {
     return (
       <View className='index'>
         <Text onClick={this.handleX}>122</Text>
+        <A />
       </View>
     )
   }
