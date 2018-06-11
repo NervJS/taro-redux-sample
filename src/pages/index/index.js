@@ -42,13 +42,12 @@ export default class Index extends Component {
   }
 
   render () {
-    const num = this.props.counter.num
     return (
       <View className='index'>
         <Button className='add_btn' onClick={this.props.add}>+</Button>
         <Button className='dec_btn' onClick={this.props.dec}>-</Button>
         <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
-        <View>{num}</View>
+        <View>{this.props.counter.num}</View>
         <A />
         <Button onClick={this.goto}>走你</Button>
       </View>
