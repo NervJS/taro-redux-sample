@@ -78,74 +78,77 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@tarojs/async-await@^0.0.42":
-  version "0.0.42"
-  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.42.tgz#f966ab1515cdfd1bb771c1115fb0c74b5e68f2f5"
+"@tarojs/async-await@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.45.tgz#8dae58e8ebab3b74ae41a177ffe7955c1ef080d0"
   dependencies:
     promise-polyfill "^7.1.2"
     regenerator-runtime "^0.11.1"
 
-"@tarojs/components@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.40.tgz#b45a6ab59562bdbe9c0557c1249310ad24a37c70"
+"@tarojs/components@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.45.tgz#9063567a5879d2ceb54f3cc5a6b51107d767c021"
   dependencies:
-    "@types/react" "^16.3.16"
     classnames "^2.2.5"
     nervjs "^1.2.16"
     omit.js "^1.0.0"
     react "16.3.0"
     weui "^1.1.2"
 
-"@tarojs/plugin-babel@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.40.tgz#dff537d6b33d4d745dc31676adc7332a4688a1b3"
+"@tarojs/plugin-babel@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.45.tgz#bcb24e77ea902675d2ebe5725923cd9238c2da56"
   dependencies:
     babel-core "^6.26.0"
 
-"@tarojs/plugin-csso@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-csso/-/plugin-csso-0.0.40.tgz#5a7188916d632485bd9bb55bd52f9f073ec8e26f"
+"@tarojs/plugin-csso@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-csso/-/plugin-csso-0.0.45.tgz#db1ffd8c87c3c77545bdd1be054743e80ee5b1e9"
   dependencies:
     csso "^3.5.0"
 
-"@tarojs/plugin-sass@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.40.tgz#f13c2b3a84634751b47206f027bc58b3e6b6f331"
+"@tarojs/plugin-sass@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.45.tgz#7f7f9e7504cae17c4e9263942393d759c0b9e56e"
   dependencies:
     node-sass "^4.8.3"
 
-"@tarojs/plugin-uglifyjs@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-uglifyjs/-/plugin-uglifyjs-0.0.40.tgz#5e269654aebe0ec330885b18a2e458e93719610e"
+"@tarojs/plugin-uglifyjs@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-uglifyjs/-/plugin-uglifyjs-0.0.45.tgz#52dafb729f12c886184770f0439a1f56215b275b"
   dependencies:
     uglify-js "^3.3.24"
 
-"@tarojs/router@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.40.tgz#f892a7973d90312e3cf14af987abaf436cc1cde8"
+"@tarojs/redux@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/redux/-/redux-0.0.45.tgz#0c80e170807692e4947cac9499d3b7715fa4def1"
 
-"@tarojs/taro-h5@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/taro-h5/-/taro-h5-0.0.40.tgz#233a399eb0e1d79eaea0475abb9c494dc4d7b98e"
+"@tarojs/router@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.45.tgz#4a64f0cd6193dcd1413b6c02964b0f8e233fcab5"
+
+"@tarojs/taro-h5@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/taro-h5/-/taro-h5-0.0.45.tgz#fb7152602961410c97996b5d5d041acf9c07bd4d"
   dependencies:
-    "@tarojs/taro" "0.0.40"
+    "@tarojs/taro" "0.0.45"
     jsonp-retry "^1.0.3"
     nervjs "^1.2.18"
 
-"@tarojs/taro-weapp@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/taro-weapp/-/taro-weapp-0.0.40.tgz#be0def79ab835b508161fdb8df53c73101fb0181"
+"@tarojs/taro-weapp@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/taro-weapp/-/taro-weapp-0.0.45.tgz#74f2eceb0d2f41aaf03175f211fd32e3e5fba07b"
   dependencies:
-    "@tarojs/taro" "0.0.40"
+    "@tarojs/taro" "0.0.45"
     prop-types "^15.6.1"
 
-"@tarojs/taro@0.0.40", "@tarojs/taro@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.40.tgz#7d3520542f5b82b4670c551ef2bb96724abd4950"
+"@tarojs/taro@0.0.45", "@tarojs/taro@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.45.tgz#ab4cc5239b43fcd04635c5720a96d3a15a44476f"
 
-"@tarojs/webpack-runner@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.40.tgz#364cb71759c7b29d3787f3138a6dfd7be1c4dd03"
+"@tarojs/webpack-runner@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.45.tgz#0ffa814932d61cc79e9bd5af6921e5842dcbcbf2"
   dependencies:
     autoprefixer "^8.2.0"
     babel-core "^6.26.0"
@@ -164,7 +167,7 @@
     opn "^5.3.0"
     ora "^2.1.0"
     postcss-loader "^2.1.3"
-    postcss-plugin-constparse "0.0.40"
+    postcss-plugin-constparse "0.0.45"
     postcss-pxtransform "^0.0.1"
     sass-loader "^6.0.7"
     style-loader "^0.20.3"
@@ -173,12 +176,6 @@
     webpack "^3.11.0"
     webpack-dev-server "^2.11.2"
     webpack-merge "^4.1.2"
-
-"@types/react@^16.3.16":
-  version "16.3.17"
-  resolved "https://registry.npmjs.org/@types/react/-/react-16.3.17.tgz#d59d1a632570b0713946ed9c2949d994773633c5"
-  dependencies:
-    csstype "^2.2.0"
 
 abbrev@1:
   version "1.1.1"
@@ -1813,10 +1810,6 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
-csstype@^2.2.0:
-  version "2.5.3"
-  resolved "https://registry.npmjs.org/csstype/-/csstype-2.5.3.tgz#2504152e6e1cc59b32098b7f5d6a63f16294c1f7"
-
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -1862,6 +1855,10 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+
+deep-diff@^0.3.5:
+  version "0.3.8"
+  resolved "https://registry.npmjs.org/deep-diff/-/deep-diff-0.3.8.tgz#c01de63efb0eec9798801d40c7e0dae25b582c84"
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -2225,9 +2222,11 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-taro@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/eslint-config-taro/-/eslint-config-taro-0.1.3.tgz#99a88a80bd3c0cb7fce56ea40e7ffef8bd1b3072"
+eslint-config-taro@^0.0.45:
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/eslint-config-taro/-/eslint-config-taro-0.0.45.tgz#1e251418cf9088346393d02b66d2c2a0a3910043"
+  dependencies:
+    eslint-plugin-taro "0.0.45"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
@@ -2267,9 +2266,9 @@ eslint-plugin-react@^7.8.2:
     jsx-ast-utils "^2.0.1"
     prop-types "^15.6.1"
 
-eslint-plugin-taro@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/eslint-plugin-taro/-/eslint-plugin-taro-0.1.3.tgz#fe6772f2cf2eb6030f763cf3aa4854361c273abf"
+eslint-plugin-taro@0.0.45, eslint-plugin-taro@^0.0.45:
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/eslint-plugin-taro/-/eslint-plugin-taro-0.0.45.tgz#6a6ef2326c32157f5257dacd04ccbf6952b95b23"
   dependencies:
     has "^1.0.1"
 
@@ -4119,6 +4118,10 @@ neo-async@^2.5.0:
   version "2.5.1"
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.5.1.tgz#acb909e327b1e87ec9ef15f41b8a269512ad41ee"
 
+nerv-redux@^1.2.18:
+  version "1.2.18"
+  resolved "https://registry.npmjs.org/nerv-redux/-/nerv-redux-1.2.18.tgz#b57372702c91d2ee06c6744eaf79601e55d0bb63"
+
 nerv-shared@1.2.15:
   version "1.2.15"
   resolved "https://registry.npmjs.org/nerv-shared/-/nerv-shared-1.2.15.tgz#9e7c7f3e32447fe8ae40efdd2ddc85b395797e77"
@@ -4130,6 +4133,13 @@ nerv-utils@1.2.15:
 nervjs@^1.2.16, nervjs@^1.2.18:
   version "1.2.18"
   resolved "https://registry.npmjs.org/nervjs/-/nervjs-1.2.18.tgz#d1b9c394338cf938f11fabcd3f3f469de0dd139b"
+  dependencies:
+    nerv-shared "1.2.15"
+    nerv-utils "1.2.15"
+
+nervjs@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/nervjs/-/nervjs-1.3.0.tgz#4dcfe0659748dd81e22761f567f06790359b3ec6"
   dependencies:
     nerv-shared "1.2.15"
     nerv-utils "1.2.15"
@@ -4855,9 +4865,9 @@ postcss-ordered-values@^2.1.0:
     postcss "^5.0.4"
     postcss-value-parser "^3.0.1"
 
-postcss-plugin-constparse@0.0.40:
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/postcss-plugin-constparse/-/postcss-plugin-constparse-0.0.40.tgz#36de924e0fd590c74f5a98c348383cf7dd90ca7f"
+postcss-plugin-constparse@0.0.45:
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/postcss-plugin-constparse/-/postcss-plugin-constparse-0.0.45.tgz#cb68337bdfc36e683bc28ce4df5883d2f0844eab"
   dependencies:
     postcss "^6.0.22"
 
@@ -5218,6 +5228,23 @@ reduce-function-call@^1.0.1:
   resolved "https://registry.npmjs.org/reduce-function-call/-/reduce-function-call-1.0.2.tgz#5a200bf92e0e37751752fe45b0ab330fd4b6be99"
   dependencies:
     balanced-match "^0.4.2"
+
+redux-logger@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
+  dependencies:
+    deep-diff "^0.3.5"
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+
+redux@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
+  dependencies:
+    loose-envify "^1.1.0"
+    symbol-observable "^1.2.0"
 
 regenerate@^1.2.1:
   version "1.4.0"
@@ -5987,6 +6014,10 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 table@4.0.2:
   version "4.0.2"
