@@ -1,25 +1,24 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
+import { bindActionCreators } from 'redux'
 import A from '../../components/A/A'
 
-import { add, minus, asyncAdd } from '../../actions/counter'
+import * as Actions from '../../actions/counter'
 
 import './index.scss'
 
-@connect(({ counter }) => ({
-  counter
-}), (dispatch) => ({
-  add () {
-    dispatch(add())
-  },
-  dec () {
-    dispatch(minus())
-  },
-  asyncAdd () {
-    dispatch(asyncAdd())
+function mapStateToProps(state) {
+  return {
+    counter: state.counter.toJS()
   }
-}))
+}
+function mapDispatchToProps(dispatch) {
+  return {
+    ...bindActionCreators(Actions, dispatch)
+  }
+}
+@connect(mapStateToProps, mapDispatchToProps)
 export default class Index extends Component {
   config = {
     navigationBarTitleText: '首页'
@@ -42,11 +41,12 @@ export default class Index extends Component {
   }
 
   render () {
+    const { add, minus, asyncAdd, counter } = this.props
     return (
       <View className='index'>
-        <Button className='add_btn' onClick={this.props.add}>+</Button>
-        <Button className='dec_btn' onClick={this.props.dec}>-</Button>
-        <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
+        <Button className='add_btn' onClick={add}>+</Button>
+        <Button className='dec_btn' onClick={minus}>-</Button>
+        <Button className='dec_btn' onClick={asyncAdd}>async</Button>
         <View>{this.props.counter.num}</View>
         <A />
         <Button onClick={this.goto}>走你</Button>
@@ -54,4 +54,3 @@ export default class Index extends Component {
     )
   }
 }
-

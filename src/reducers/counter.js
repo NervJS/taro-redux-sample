@@ -1,22 +1,20 @@
 import { ADD, MINUS } from '../constants/counter'
+import { createReducer } from 'redux-immutablejs'
+import { fromJS } from 'immutable'
 
-const INITIAL_STATE = {
+export const counter = createReducer(fromJS({
   num: 0
-}
-
-export default function counter (state = INITIAL_STATE, action) {
-  switch (action.type) {
-    case ADD:
-      return {
-        ...state,
-        num: state.num + 1
-      }
-     case MINUS:
-       return {
-         ...state,
-         num: state.num - 1
-       }
-     default:
-       return state
+}),{
+  [ADD]: (state, action) => {
+    const counter = state.toJS()
+    return state.merge({
+      num: counter.num + 1
+    })
+  },
+  [MINUS]: (state, action) => {
+    const counter = state.toJS()
+    return state.merge({
+      num: counter.num - 1
+    })
   }
-}
+})
