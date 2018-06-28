@@ -24,9 +24,27 @@ export default class Index extends Component {
     navigationBarTitleText: '首页'
   }
 
-  componentWillMount () { }
+  state = {
+    x: [1, 2]
+  }
 
-  componentDidMount () { }
+  componentWillMount () {
+    console.log('page willmount')
+    setTimeout(() => {
+      this.setState({
+        x: [3, 4]
+      })
+    }, 2000);
+
+  }
+
+  componentDidMount () {
+    console.log('page didmount')
+  }
+
+  componentWillReceiveProps (nextProps) {
+    console.log(this.props, nextProps)
+  }
 
   componentWillUnmount () { }
 
@@ -36,7 +54,7 @@ export default class Index extends Component {
 
   goto = () => {
     Taro.navigateTo({
-      url: '/pages/index2/index'
+      url: '/pages/index2/index?sd=1'
     })
   }
 
@@ -48,7 +66,7 @@ export default class Index extends Component {
         <Button className='dec_btn' onClick={minus}>-</Button>
         <Button className='dec_btn' onClick={asyncAdd}>async</Button>
         <View>{this.props.counter.num}</View>
-        <A />
+        {this.state.x.map((item, index) => <A key={index} t={item} />)}
         <Button onClick={this.goto}>走你</Button>
       </View>
     )

@@ -6,9 +6,13 @@ export default class Index extends Component {
     navigationBarTitleText: '首页2'
   }
 
-  componentWillMount () { }
+  componentWillMount () {
 
-  componentDidMount () { }
+  }
+
+  componentDidMount () {
+    console.log(this.$router.params)
+  }
 
   componentWillUnmout () { }
 
