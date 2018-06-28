@@ -59,7 +59,7 @@ export default class Index extends Component {
   }
 
   render () {
-    const { add, minus, asyncAdd, counter } = this.props
+    const { add, minus, asyncAdd } = this.props
     return (
       <View className='index'>
         <Button className='add_btn' onClick={add}>+</Button>
