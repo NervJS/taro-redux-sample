@@ -3,6 +3,7 @@ import { View, Button } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
 import { bindActionCreators } from 'redux'
 import A from '../../components/A/A'
+import B from '../../components/B/B'
 
 import * as Actions from '../../actions/counter'
 
@@ -66,7 +67,9 @@ export default class Index extends Component {
         <Button className='dec_btn' onClick={minus}>-</Button>
         <Button className='dec_btn' onClick={asyncAdd}>async</Button>
         <View>{this.props.counter.num}</View>
-        {this.state.x.map((item, index) => <A key={index} t={item} />)}
+        {this.state.x.map((item, index) => <A key={index} t={item} onClick={this.goto} />)}
+        <B onClick={this.goto} />
+        <B onClick={this.goto} />
         <Button onClick={this.goto}>走你</Button>
       </View>
     )
