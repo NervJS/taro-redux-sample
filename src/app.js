@@ -1,16 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/redux'
+import '@tarojs/async-await'
 
 import Index from './pages/index'
 
 import './app.scss'
 
 import configStore from './store'
-
-// 支付宝小程序不需要引用 @tarojs/async-await
-if (Taro.getEnv() !== Taro.ENV_TYPE.ALIPAY) {
-  require('@tarojs/async-await')
-}
 
 const store = configStore()
 
