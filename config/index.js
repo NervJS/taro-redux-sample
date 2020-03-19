@@ -4,32 +4,34 @@ const config = {
   designWidth: 750,
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: {
-    babel: {
-      sourceMap: true,
-      presets: [
-        'env'
-      ],
-      plugins: [
-        'transform-class-properties',
-        'transform-decorators-legacy',
-        'transform-object-rest-spread'
-      ]
-    },
+  babel: {
+    sourceMap: true,
+    presets: [
+      'env'
+    ],
+    plugins: [
+      'transform-class-properties',
+      'transform-decorators-legacy',
+      'transform-object-rest-spread',
+      ['transform-runtime', {
+        'helpers': false,
+        'polyfill': false,
+        'regenerator': true,
+        'moduleName': 'babel-runtime'
+      }]
+    ]
   },
   defineConstants: {
   },
-  weapp: {
+  mini: {
 
   },
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
-    module: {
-      postcss: {
-        autoprefixer: {
-          enable: true
-        }
+    postcss: {
+      autoprefixer: {
+        enable: true
       }
     }
   }
